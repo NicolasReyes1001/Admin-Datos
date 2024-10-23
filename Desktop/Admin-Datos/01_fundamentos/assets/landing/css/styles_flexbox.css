@@ -1,0 +1,237 @@
+/* ------------------------------------------------------------------------------------- */
+/* -------------------------- I. GENERALIDADES DEL CONTENIDO --------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* Selector Universal */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+}
+/* Borde */
+.borde{
+    border: 1px solid gray;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
+/* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+/* Contenedor */
+.contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;    
+}
+/* Nav */
+nav{    
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.caja-nav{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height: 20%;
+
+}
+.caja-ingreso{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height: 80%;
+}
+
+.logo{
+    flex: 20%;
+}
+.navega{
+    flex: 65%;
+}
+.ingreso{
+    flex: 15%;
+}
+
+/* Encabezado */
+header{    
+    height: 500px;    
+}
+/* Títulos */
+.titulo{
+    height: 100px;
+}
+/* Secciones */
+section{
+    height: 700px;
+}
+/* Portafolio */
+.portafolio{
+    display: flex;    
+    flex-flow: column;
+    
+}
+.caja{
+    display: flex;    
+    flex-flow: column;
+    width:100%;
+    height:66.6%;  
+}
+.portafolio-column-top{
+    width: 100%;
+    height: 33.3%;
+}
+.portafolio-column-right, .portafolio-column-left{
+    width: 100%;
+    height: 50%;
+}
+.portafolio-column{
+    flex: 1;
+}
+/* Nosotros */
+.nosotros{}
+/* Contáctenos */
+.contactenos{}
+/* Pie de Página */
+footer{
+    height: 100px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
+/* -------------------------------------- TABLETS -------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+@media (max-width:992px){     
+    
+    .caja-nav{
+        display:flex;
+        flex-direction:column;
+
+    }
+    .caja-ingreso{
+        display:flex;
+        flex-direction: row;
+    }
+    .ingreso{
+        flex: 20%;
+    }
+    
+    
+    .portafolio {
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+        
+    
+    }
+
+    .caja{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+    }
+    .portafolio-column-top{
+        width: 100%;
+        height: 50%;
+    } 
+    .portafolio-column-right{
+        width: 50%;
+        height: 100%;
+        
+        
+    } 
+    .portafolio-column-left{
+        width: 50%;
+        height: 100%;
+    } 
+
+}
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
+/* -------------------------------------- SMATHPHONE -------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+@media (max-width:576px){      
+    
+    .contenedor{
+        width: 90%;
+        max-width: 1280px;
+        margin: auto;    
+    }
+    /* Nav */
+    nav{    
+        height: 50px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .caja-nav{
+        display:flex;
+        flex-direction:column;
+        
+    
+    }
+    .caja-ingreso{
+        display:flex;
+        flex-direction:column;
+        
+    }
+    .logo{
+        flex: 20%;
+    }
+    .navega{
+        flex: 65%;
+    }
+    .ingreso{
+        flex: 15%;
+    }
+    
+    /* Encabezado */
+    header{    
+        height: 500px;    
+    }
+    /* Títulos */
+    .titulo{
+        height: 100px;
+    }
+    /* Secciones */
+    section{
+        height: 700px;
+    }
+    /* Portafolio */
+    .portafolio{
+        display: flex;    
+        flex-flow: column;
+        
+    }
+    .caja{
+        display: flex;    
+        flex-flow: column;
+        width:100%;
+        height:66.6%;  
+    }
+    .portafolio-column-top{
+        width: 100%;
+        height: 33.3%;
+    }
+    .portafolio-column-right, .portafolio-column-left{
+        width: 100%;
+        height: 50%;
+    }
+    .portafolio-column{
+        flex: 1;
+    }
+    /* Nosotros */
+    .nosotros{}
+    /* Contáctenos */
+    .contactenos{}
+    /* Pie de Página */
+    footer{
+        height: 100px;
+    }
+    
+}
